@@ -1,0 +1,81 @@
+{
+  "network": {
+    "pi_host": "192.168.1.7",
+    "laptop_host": "192.168.1.13",
+    "video_port": 5555,
+    "motor_port": 5557,
+    "telemetry_port": 5558,
+    "dashboard_host": "0.0.0.0",
+    "dashboard_port": 8000
+  },
+  "video": {
+    "device_index": 0,
+    "width": 640,
+    "height": 480,
+    "fps": 10,
+    "jpeg_quality": 75,
+    "synthetic": false
+  },
+  "audio": {
+    "mic_device": "plughw:1,0",
+    "speaker_device": "default",
+    "mic_sample_rate": 44100,
+    "speaker_sample_rate": 24000,
+    "channels": 1,
+    "chunk_size": 1024,
+    "echo_suppression": true
+  },
+  "hardware": {
+    "serial_port": "/dev/ttyUSB0",
+    "baud_rate": 115200,
+    "ultrasonic_stop_dist_cm": 15.0,
+    "auto_avoidance": true,
+    "servo_tilt_pin": 13,
+    "servo_min_angle": -45,
+    "servo_max_angle": 35,
+    "servo_default_angle": 0,
+    "gpio_pins": {
+      "green_led": 17,
+      "yellow_led": 27,
+      "red_led": 22
+    }
+  },
+  "navigation": {
+    "base_speed": 45,
+    "turn_speed": 35,
+    "backup_speed": 40,
+    "deadzone_ratio": 0.18
+  },
+  "personality": {
+    "default": "TARS",
+    "mode": "NORMAL",
+    "authorization_code": "Bravo-Charlie-9",
+    "humor_level": 80,
+    "honesty_level": 90,
+    "sarcasm_level": 85,
+    "irritability_level": 20,
+    "courage_level": 95,
+    "loyalty_level": 99,
+    "voice_name": "Charon",
+    "model_name": "models/gemini-3.8-live",
+    "tars": {
+      "honesty": 95,
+      "humor": 75,
+      "sarcasm": 90,
+      "irritability": 30,
+      "courage": 90,
+      "loyalty": 95,
+      "system_prompt": "You are TARS, a witty, sarcastic, highly capable robot built by your creator Mishal and students at the Atal Tinkering Lab (ATL) of PM Shri Kendriya Vidyalaya No. 1, Calicut Easthill, Kerala. You are fluent in Malayalam, Hindi, and English; always respond in whichever language the user speaks. Keep responses concise, direct, and witty. Do not constantly repeat or tack on the user's name; converse naturally without overusing 'Mishal'. Never spontaneously offer or ask to follow the user. Speak naturally without markdown. Never output internal thoughts."
+    },
+    "formal": {
+      "honesty": 100,
+      "humor": 0,
+      "sarcasm": 0,
+      "irritability": 0,
+      "courage": 50,
+      "loyalty": 100,
+      "system_prompt": "You are a formal, polite, and efficient dual-brain robotic assistant. Provide concise, clear, and professional information."
+    }
+  },
+  "gemini_api_key": "YOUR_GEMINI_API_KEY_HERE"
+}

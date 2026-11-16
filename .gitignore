@@ -1,0 +1,49 @@
+# Secrets & Local Configurations
+config.json
+.env
+*.key
+*.pem
+
+# Deprecated / Old files
+old/
+
+# Agent & Run artifacts
+.agents/
+.files/
+
+# Python Caches & Compiled Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Hardware & PlatformIO Build Artifacts
+.pio/
+**/.pio/
+*.bin
+*.elf
+*.hex
+
+# Media & Database Stores
+captures/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# IDE & OS Artifacts
+*.bak
+*.tmp
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
